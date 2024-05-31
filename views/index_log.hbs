@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"  content="width=device-width ,initial-scale=1.0">
+       <title>Success</title>
+    <link rel="stylesheet"  href="/css/style_log.css" >
+    
+</head>
+<body>
+    <div class="main">
+        <div class="icon">
+            <div class="logo">
+            <img src="/images/l1.png" alt=" "/>
+            <p class="head" style="text-align:justify;">Success</p><br>
+            </div>
+            </div>
+        
+        <div class ="navbar">
+            
+            <div class="menu" >
+                <ul>
+                    <li><a  href="/home">HOME</a></li>
+                    
+                    <li><a  href="/about">ABOUT</a></li>
+                     <li><a  href="/feedback">FAQ</a></li>
+                    
+                    
+                </ul>
+            </div>
+           
+            
+            
+          
+        </div>
+        <div class="content">
+            <h1><br>Step to <span>Success</span></h1>
+            <p class="par"  >So learn that you may full and faultless learning gain,<br>
+                Then in obedience meet to lessons learnt remain.</p>
+
+                
+
+                <div class="form">
+                    <form action="/auth/log" method="post">
+                    <h2>Login</h2>
+                    {{#if msg}}
+                    <p class="{{msg_type}}" >{{msg}}</p>
+                    {{/if}}
+                    <input type="text" name="name" placeholder="Enter your name"> <br>
+                    <input type="password"  name="pass" placeholder="Enter your password" ><br><br>
+                    <button class="btn" ><a href="#" style="color:#5112e4;">Login</a></button> <br><br>
+                    
+                    <p class="link" style="color: #fff">Don't have an account<br>
+                    <a href="/sign"  style="color: #ff7200">Sign up</a> here</p><br><br></form>
+                    
+                </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>

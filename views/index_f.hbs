@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Feedback</title>
+        <meta name="viewport"  content="width=device-width ,initial-scale=1.0">
+        <link rel="stylesheet" href="/css/style_feedback.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <div class="main">
+        <div class="icon">
+            <div class="logo">
+            <img src="/images/l1.png" alt=" "/>
+            <p class="head" style="text-align:justify;">Success</p><br>
+            </div>
+            </div>
+        
+        <div class ="navbar">
+            
+            <div class="menu" >
+                <ul>
+                    <li><a  href="/home">HOME</a></li>
+                    <li><a  href="/about">ABOUT</a></li>
+                    <li><a  href="/login">LOGIN</a></li>
+                    
+                    
+                </ul>
+            </div>
+    </div>
+        
+
+        <div class="container">
+            <div class="content">
+            <p class="par">
+                We,the students of College of Engineering Guindy,<br>
+                 tried to provide a better Website for 9th-grade Students of Tamil Nadu.<br>
+                As of now we have created a Website which we believe it is useful to you.<br>
+                If any doubts or any ideas to upgrade <br>
+                this website's youtube links , materials or anyother ideas ,<br>
+                You are always welcome to give <br>
+                Feedback about this page.We will verify your feedback<br>
+                 and ideas and if it is good,we will Change.<br>
+                <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span style="color:blue;"> -Team Itians.</span> 
+                
+                
+                  
+            </p></div>
+            
+            
+            <script>
+        function showPopUpMessage(message, success) {
+            var messageBox = document.getElementById("message");
+            messageBox.style.display = "block";
+            messageBox.textContent = message;
+            messageBox.style.color = success ? "green" : "red";
+
+            setTimeout(function() {
+                messageBox.style.display = "none";
+            }, 3000); // Hide the message after 3 seconds
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+
+            var formData = new FormData(event.target);
+
+            fetch("https://formspree.io/f/xvojkepz", {
+                method: "POST",
+                body: formData,
+                headers: {
+                    "Accept": "application/json"
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    showPopUpMessage("thank you for your feedback!", true);
+                     
+                } else {
+                    showPopUpMessage("Thank you for your feedback!", false);
+                    document.getElementById("feedb").value="";
+                }
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                showPopUpMessage("An error occurred. Please try again later.", false);
+            });
+        }
+    </script>
+
+    <div class="mainf">
+        <form id="feedbackForm" method="POST" onsubmit="handleSubmit(event)">
+            <div class="feed">
+                <textarea id="feedb" name="feedback" rows="10" required></textarea>
+                <label for="feedb">YOUR FEEDBACK:</label><br>
+            </div>
+            <button type="submit">SUBMIT</button>
+            <div id="message"></div>
+        </form>
+    </div>
+ 
+  </div>        
+
+    </body>
+</html>

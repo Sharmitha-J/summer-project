@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"  content="width=device-width ,initial-scale=1.0">
+       <title>Signin</title>
+    <link rel="stylesheet"  href="/css/style_sign.css" >
+    
+</head>
+<body>
+    <div class="main">
+     <div class="icon">
+            <div class="logo">
+            <img src="/images/l1.png" alt=" "/>
+            <p class="head" style="text-align:justify;">Success</p><br>
+            </div>
+            </div>
+        <div class ="navbar">
+            
+            <div class="men" >
+                <ul>
+                    
+                    <li><a href="/home">HOME</a></li>
+                    
+                    <li><a href="/feedback">FEEDBACK</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    
+                    
+                </ul>
+            </div>
+           
+            
+            
+          
+        </div>
+        
+        
+        <div class="content">
+            
+
+                
+
+                <div class="form" >
+                    <h2>Sign Up</h2>
+                    {{#if msg}}
+                    <p class="{{msg_type}}" >{{msg}}</p>
+                    {{/if}}
+                    <form action="/auth/sign" method="post">
+                    <input type="text"  name="name" id="name" placeholder="Enter your name"> <br>
+                   
+                    
+                    <select name="medium" id="">
+                    <div class="op">
+                    <option value="m" id="m" name="m"> Enter your Language</option>
+                    <option value="tamil medium" id="medium" name="medium">tamil medium</option>
+                    <option value="english medium" id="medium" name="medium">english medium</option>
+                     </div>
+                    </select>
+		   
+                    <input type="password"  name="pass" placeholder="Enter your password" ><br><br>
+                    <button class="btn" type="submit" ><a href="#" style="color:#4f16e0;">Sign Up</a></button></form> <br><br>
+                    <button class ="cn"><a href="/">LOGIN</a></button>
+                    
+                    
+                    
+                  </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
