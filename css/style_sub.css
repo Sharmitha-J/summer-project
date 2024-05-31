@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 109vh;
+    
+  
+}
+
+.icon{
+    width: 130px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff00c8;
+    font-size: 35px;
+    font-family: italic;
+    padding-left: 25px;
+    float: left;
+    padding-top: 10px;
+}
+.logo img{
+   width:100px;
+   height:90px;
+   display:block;
+   margin:auto;
+} 
+.hed{
+    color: #ff00c8;
+}  
+
+.navbar{
+    width: 1500px;
+    height: 75px;
+    margin: auto;
+    
+
+}
+
+.men{
+    width: 100px;
+    float: left;
+    height: 70px;
+    
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0px;
+
+}
+
+ul li{
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 30px;
+    font-size: 25px;
+    
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000f44;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    
+}
+
+
+
+ul li a:hover{
+    color: #ff9100;
+}
+.menu{
+   
+    position: absolute;
+    bottom:10px;
+    top: 100px;
+    left: 1070px;
+    
+    padding: 10px;
+    
+
+}
+
+.btn{
+    width: 240px;
+    height: 60px;
+    background: linear-gradient(to top,rgba(174, 99, 255, 0.5)50%,rgba(169, 99, 255, 0.5)50%);;
+    border: none;
+    margin-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-style: italic ;
+    
+}
+
+.btn:hover{
+    background: #ff33ee;
+    color: #5500ff;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.head{
+    font-size: 30px;
+    color:#d1370d;
+}
+
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #000000;
+    postion: relative;
+}
+
+.content .par{
+    padding-left: 30px;
+    padding-bottom: 25px;
+    padding-top: 210px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size:30px;
+}
+.content .par1{
+    padding-left: 30px;
+    padding-bottom: 25px;
+    padding-top: 210px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size:20px;
+}
+
+li .fa-brands{
+    color:rgb(106, 56, 222);
+    font-size: 30px;
+}
+.lo{
+    padding-left: 700px;
+}
+.log img{
+    width:60px;
+    height:60px;
+    margin-left:1400px;
+    margin-top: -60px;
+    border-radius: 50% ;
+   
+}
+.options {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    margin-left:1380px;
+    z-index: 1;
+}
+.options a {
+    text-decoration:none;
+    color:#000;
+    font-size:25px;
+    font-family: Arial;
+}
+
+.log.active .options {
+    display: block;
+
+}
+.log {
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+
+@media only screen and (max-width:700px){
+
+    .main{
+        width: 400%;
+        background-position: center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        height: 400vh;
+        
+      
+    }
+    .men{
+        width: 100px;
+        float: left;
+        height: 70px;
+        margin-left:200px;
+        margin-top:100px;
+    }
+    
+    .log{
+        width:150px;
+        height:140px;
+        margin-left:670px;
+        margin-top: 65px;
+        border-radius: 50% ;
+       
+    }
+    .content .par{
+        
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 1.2px;
+        line-height: 90px;
+        margin-top:100px;
+        font-size:500px;
+       
+    }
+    .content .par1{
+        
+        font-family: 'Dancing Script', cursive;
+        letter-spacing: 1.2px;
+        line-height: 90px;
+        margin-top:100px;
+        font-size:500px;
+       
+    }
+
+    .menu{
+   
+        
+        
+        top: 1200px;
+        left: 370px;
+        
+    }
+     
+.icon{
+    width: 20px;
+    float: left;
+    height: 70px;
+   
+}
+.head{
+    font-size:100px;
+    margin-left:50 px;
+}
+
+.logo img{
+   width:250px;
+   height:230px;
+   display:block;
+   margin:auto;
+}  
+ 
+  a{
+    font-size: 50px;
+}
+.logo{
+    color: #ff00c8;
+    font-size:55px;
+    padding-top:60px;
+	
+}
+.hed{
+    font-size:70px;
+    margin-top:0px;
+} 	
+	
+
+.head{
+        font-size: 70px;
+       
+}
+ul li{
+    list-style: none;
+    margin-left: 50px;
+    margin-top: 30px;
+    font-size: 25px;
+    
+}
+
+    .btn{
+        width: 540px;
+        height: 100px;
+        
+        font-size: 40px;
+        
+        
+    }
+
+    .content .par{
+        font-size: 60px;
+    }
+    .content .par1{
+        font-size: 35px;
+    }
+
+    ul li{
+        font-size: 40px;
+    }
+    li .fa-brands{
+        
+        font-size: 70px;
+    }
+
+}
+
+
+
+
+
+
+
+
+

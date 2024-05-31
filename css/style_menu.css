@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    height: 100vh;
+   
+    
+  
+}
+html, body{
+    height: 100%;
+    /*background: linear-gradient(to top right, #a5b05e,#a76fd0, #5eb4c0, #d46bc1);*/
+
+}
+
+
+
+
+
+nav{
+    width: 250px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.1);
+    border-radius: 10px;
+    box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5)
+}
+
+nav ul{
+    position: relative;
+    list-style-type: none;
+}
+
+nav ul .l {
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    font-size: 1.85em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: tomato;
+    padding: 10px 30px;
+    height: 50px;
+    transition: 5s ease;
+    border-radius: 0 30px;
+}
+
+
+nav ul li a{
+    display: flex;
+    align-items: center;
+    font-family: arial;
+    font-size: 1.15em;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #39107B;
+    padding: 30px 30px;
+    height: 50px;
+    border-radius: 0 30px;
+}
+
+nav ul li a:hover{
+    background: #39107B;
+    color: #000;
+
+
+}
+
+nav ul ul{
+    position: absolute;
+    left: 250px;
+    width: 200px;
+    top: 0;
+    display: none;
+    background: #457d32;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul ul li ul{
+    position: absolute;
+    left: 250px;
+    width: 200px;
+    top: 0;
+    display: none;
+    background: #76b860;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+}
+
+nav ul  span{
+    position: absolute;
+    right: 20px;
+    font-size: 1.5em;
+
+}
+
+nav ul .dropdown{
+    position: relative;
+}
+
+nav ul .dropdown:hover > ul{
+    display:initial;
+}
+
+nav ul .dropdown_two ul{
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+
+nav ul .dropdown_two:hover > ul{
+    display: initial;
+}
+
+nav ul .pu1 ul{
+    top: 0px;
+}
+nav ul .pu2 ul{
+    top: 50px;
+}
+nav ul .pu3 ul{
+    top: 100px;
+}
+nav ul .pu4 ul{
+    top: 150px;
+}
+nav ul .pu5 ul{
+    top: 200px;
+}
+nav ul .pu6 ul{
+    top: 250px;
+}
+nav ul .pu7 ul{
+    top: 300px;
+}
+nav ul .pu8 ul{
+    top: 350px;
+}
+nav ul .pu9 ul{
+    top: 400px;
+}
+nav ul .cu2 ul{
+    top: 50px;
+}
+nav ul .cu3 ul{
+    top: 100px;
+}
+nav ul .cu4 ul{
+    top: 150px;
+}
+nav ul .cu5 ul{
+    top: 200px;
+}
+nav ul .cu6 ul{
+    top: 250px;
+}
+nav ul .cu7 ul{
+    top: 300px;
+}
+nav ul .bu1 ul{
+    top: 0px;
+}
+nav ul .bu2 ul{
+    top: 50px;
+}
+nav ul .bu3 ul{
+    top: 100px;
+}
+nav ul .bu4 ul{
+    top: 150px;
+}
+nav ul .bu5 ul{
+    top: 200px;
+}
+nav ul .bu6 ul{
+    top: 200px;
+}
+nav ul .bu7 ul{
+    top: 240px;
+}
+nav ul .bu8 ul{
+    top: 250px;
+}
+nav ul .bu9 ul{
+    top: 400px;
+}
+
+.menu{
+   
+   
+    position: absolute;
+    bottom:10px;
+    top: 100px;
+    left: 1070px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+.btn{
+    width: 240px;
+    height: 80px;
+    background: linear-gradient(to top,rgba(174, 99, 255, 0.5)50%,rgba(169, 99, 255, 0.5)50%);;
+    border: none;
+    margin-top: 30px;
+    font-size: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+    font-style: italic ;
+}
+
+.btn:hover{
+    background: #ff33ee;
+    color: #5500ff;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+
+    .les1{
+        width: 400px;
+        float: left;
+        height: 70px;
+    }
+
+    .les1 .sub{
+        padding-top: 100px;
+        padding-left:330px;
+        color:#7733ff;
+        font-size: 25px;
+    }
+    
+    .les1 .list{
+       
+        padding-top: 1px;
+        padding-left:240px;
+      
+    }
+
+  
+
+    .les2{
+        width: 300px;
+        float: left;
+        height: 70px;
+    }
+
+    .les2 .sub{
+        padding-top: 100px;
+        padding-left:160px;
+        color:#7733ff;
+        font-size: 25px;
+    }
+    
+    .les2 .list{
+       
+        padding-top: 1px;
+        padding-left:80px;
+      
+    }
+
+    .list li{
+        list-style: none;
+        margin-left: 92px;
+        margin-top: 20px;
+        font-size: 15px;
+        padding-top: 5px;
+        text-decoration: none;
+        color:#000;
+        font-family: Arial;
+        font-weight: bold;
+    }
+
+ 
+
+    .les3 .sub{
+        padding-top: 100px;
+        padding-left:870px;
+        color:#7733ff;
+        font-size: 27px;
+    }
+    
+    .les3 .list{
+       
+        padding-top: 2px;
+        padding-left:790px;
+      
+    }
+
+    @media  screen and (max-width: 700px){
+        .main{
+            width: 500%;
+            
+            background-position: left;
+            background-size: 90% 100%;
+            background-attachment: fixed;
+            height: 500vh;
+            
+          
+        }
+
+        nav{
+            width: 250px;
+            height:2500px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.5)
+        }
+
+        nav ul .l {
+            
+            font-size: 2.85em;
+            
+        }
+        
+        
+        nav ul li a{
+            
+            font-size: 2.15em;
+            height: 150px;
+            
+        }
+       
+
+        
+        
+        .les3 .sub{
+            padding-top: 1000px;
+            padding-left:330px;
+            font-size: 40px;
+        }
+        
+        .les3 .list{
+           
+            padding-top: 23px;
+            padding-left:250px;
+           
+          
+        }
+        .menu{
+   
+   
+            
+            top: 2000px;
+            left: 300px;
+            
+            
+        
+        }
+
+        .les2 .sub{
+            
+            padding-left:320px;
+            font-size: 40px;
+            
+        }
+        
+        .les2 .list{
+           
+            padding-top: 1px;
+            padding-left:230px;
+          
+        }
+        
+        .les1 .sub{
+            
+            font-size: 25px;
+            font-size: 40px;
+        }
+        .list li{
+            font-size: 20px;
+            
+        }
+        
+      
+        
+        
+        
+        
+        
+
+    }
+
+ 
+    
+    
+    
+   
+
+  
+    
+    
+    
+  
+
+
+
+
+
+
+
+
+

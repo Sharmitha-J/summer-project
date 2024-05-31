@@ -1,0 +1,292 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'popins', sans-serif;
+    box-sizing: border-box;
+}
+
+.main{
+    width:100%;
+    height: 100vh;
+    background-image:linear-gradient( rgba(213, 230, 154, 0),#abe9fc), url(/images/sub.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    align-item: center;
+    justify-content: center;
+    
+}
+
+.content{
+    width: 1000px;
+    height: auto;
+    padding-left: 10px;
+    font-size:15px;
+    color: #000000;
+    postion: relative;
+    padding-bottom: 5px;
+    padding-top: 1px;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+
+.content .par {
+    padding-left: 80px;
+    padding-bottom: 25px;
+    padding-top: 180px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 27px;
+}
+
+span{
+    font-family: 'Dancing Script', cursive; 
+}
+
+
+
+
+
+
+
+.mainf{
+    width:25%;
+   
+    position: absolute;
+    bottom:10px;
+    top: 100px;
+    left: 1000px;
+    
+
+}
+
+
+.feed{
+    margin-bottom: 30px;
+    position: relative;
+}
+input[type="text"][name="to"] {
+    width: 32%;
+    height: 40px;
+    padding: 10px;
+   
+    outline: 0;
+    border: 2px solid #e20ac5;
+    color: #4b19e3;
+    background: transparent;
+    font-size: 15px;
+    margin-bottom: 1px; /* Add some spacing between input fields */
+}
+
+textarea{
+    width: 90%;
+    height: 400px;
+    padding: 10px;
+    outline: 0;
+    border: 2px solid #e20ac5;
+    color: #4b19e3;
+    background: transparent;
+    font-size: 15px;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #ef28d7;
+    cursor: text;
+    transition: 0.2s;
+}
+
+button{
+    padding: 10px 0;
+    color: #ee18ea;
+    outline: none;
+    background: transparent;
+    border: 2px solid #f21eeb;
+    width: 90%;
+    cursor: pointer;
+}
+
+textarea:focus~label,
+textarea:valid~label{
+    top: -35px;
+    font-size: 14px;
+} 
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin:10px;
+    
+
+}
+
+.icon{
+    width: 100px;
+    float: left;
+    height: 70px;
+}
+
+.logo{
+    color: #ff00c8;
+    font-size: 35px;
+    font-family: italic;
+    padding-left: 10px;
+    float: left;
+    padding-top: 10px;
+}
+.logo img{
+   width:100px;
+   height:90px;
+   display:block;
+   margin:auto;
+}   
+
+.menu{
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+ul li{
+    list-style: none;
+    margin-left: 30px;
+    margin-top: 27px;
+    font-size: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000f44;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    
+}
+
+
+
+ul li a:hover{
+    color: #ff9100;
+}
+
+@media only screen and (max-width:700px){
+
+    .main{
+        width:350%;
+        height: 350vh;
+        
+    }
+
+    .mainf{
+        width:100%;
+       
+        
+        bottom:50px;
+        top: 1200px;
+        left: 300px;
+        
+    
+    }
+button{
+    
+    width: 120%;
+    font-size:30px;
+}
+
+.content .par {
+    padding-left: 80px;
+    padding-bottom: 25px;
+    padding-top: 180px;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 2.3px;
+    line-height: 60px;
+    font-size:50px;
+}
+textarea{
+    width: 120%;
+    height: 700px;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #e20ac5;
+    color: #4b19e3;
+    background: transparent;
+    font-size: 25px;
+}
+label{
+     font-size:30px;
+}
+.icon{
+    width: 10px;
+    float: left;
+    height: 40px;
+}
+.logo img{
+   padding-left:20px;
+   width:150px;
+   height:130px;
+   display:block;
+   margin:0 ;
+} 
+
+.logo{
+    color: #ff00c8;
+    font-size: 20px;
+    font-family: italic;
+    padding-left:0px;
+    float: left;
+
+}  
+
+.head{
+     margin-left:15px;
+     font-size:40px;
+}    
+.menu{
+    position:relative;
+    width: 100%;
+    float: left;
+    height: 70px;
+    margin-left:80px;
+}
+
+
+ul{
+    float: left;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+
+}
+
+ul li{
+    list-style: none;
+    margin-left: 85px;
+    margin-top: 40px;
+    font-size: 35px;
+    position:relative;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #000f44;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+
+
+}
