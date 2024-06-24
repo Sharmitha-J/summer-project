@@ -32,7 +32,7 @@ This E-Learning Platform provides 9th standard students with comprehensive resou
 1. Clone the repository:
 
 ```bash
-[https://github.com/Sharmitha-J/summer-project.git]
+git clone https://github.com/Sharmitha-J/summer-project.git
 ```
 2. Install the necessary dependencies:
 ```bash
