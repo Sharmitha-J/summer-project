@@ -52,4 +52,4 @@ npm start
 `ExpressJS`,
 `CSS`,
 `JS`,
-`MYSQL`,
+`MYSQL`
