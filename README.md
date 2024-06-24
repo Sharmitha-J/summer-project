@@ -1,32 +1,55 @@
-
-**Overview:**
+# Modern Hostel Management System
 
 This E-Learning Platform provides 9th standard students with comprehensive resources, including books, guides, and a translation API to assist in learning. The platform is built using HTML, CSS, and JavaScript for a user-friendly web interface, catering to various subjects and ensuring students have access to quality educational materials.
 
-**Features:**
+## Key Features:
 
-API for Translation: Translate content between multiple languages.
+### Registration/Sign-in
+- Students can register and create an account to access the system.
+- Existing students can sign in using their credentials.
 
-Books: Access to textbooks and reference materials for all subjects.
+### Log-in
+- Students can view available books and guides based on their preferences .
 
-Guides: Study guides and supplementary materials for better understanding.
+### API for Translation:
+-Translate content between multiple languages.
 
-**Prerequisites:**
+### Books: 
+ -Access to textbooks and reference materials for all subjects.
 
-A modern web browser (Chrome, Firefox, Safari, Edge)
+### Guides:
+ - Study guides and supplementary materials for better understanding.
 
-Node.js (for running a local server and managing dependencies)
+### Feedback Section
+- Students can provide feedback on their experiences or suggest improvements.
 
-**Install dependencies:**
+## Prerequisites:
+- A modern web browser (Chrome, Firefox, Safari, Edge)
+- Node.js (for running a local server and managing dependencies)
 
+## Installation
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/paramsgit/Hostel_minor_project.git
+```
+2. Install the necessary dependencies:
+```bash
+cd npm install
 npm install
-
-Starting the Local Server:
-
+```
+3. Start the server
+```bash
 npm start
+```
 
-The server will start at http://localhost:3000.
+# Configuration
+- Modify the server/index.js file to change the configurations like API keys, server settings, etc.
 
-**Configuration**
-
-Modify the server/index.js file to change the configurations like API keys, server settings, etc.
+## Technologies Used
+`HTML`,
+`ExpressJS`,
+`CSS`,
+`JS`,
+`MYSQL`,
