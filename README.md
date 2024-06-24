@@ -32,7 +32,7 @@ This E-Learning Platform provides 9th standard students with comprehensive resou
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/paramsgit/Hostel_minor_project.git
+[https://github.com/Sharmitha-J/summer-project.git]
 ```
 2. Install the necessary dependencies:
 ```bash
