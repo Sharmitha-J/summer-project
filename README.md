@@ -1,4 +1,4 @@
-# Modern Hostel Management System
+#  E-Learning Platform
 
 This E-Learning Platform provides 9th standard students with comprehensive resources, including books, guides, and a translation API to assist in learning. The platform is built using HTML, CSS, and JavaScript for a user-friendly web interface, catering to various subjects and ensuring students have access to quality educational materials.
 
